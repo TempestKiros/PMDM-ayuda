@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/fragmentLogin">
+
+    <!-- Fragmento de Login -->
+    <fragment
+        android:id="@+id/fragmentLogin"
+        android:name="com.example.tiendadefinitiva.fragments.FragmentLogin"
+        android:label="Login"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_fragmentLogin_to_fragmentRegistro"
+            app:destination="@id/fragmentRegistro" /> <!-- Ir al fragmento de registro -->
+        <action
+            android:id="@+id/action_fragmentLogin_to_fragmentListado"
+            app:destination="@id/fragmentListado" /> <!-- Ir al fragmento de listado si login es exitoso -->
+    </fragment>
+
+    <!-- Fragmento de Registro -->
+    <fragment
+        android:id="@+id/fragmentRegistro"
+        android:name="com.example.tiendadefinitiva.fragments.FragmentRegistro"
+        android:label="Registro"
+        tools:layout="@layout/fragment_registro">
+        <action
+            android:id="@+id/action_fragmentRegistro_to_fragmentLogin"
+            app:destination="@id/fragmentLogin" /> <!-- Volver al fragmento de login -->
+    </fragment>
+
+    <!-- Fragmento de Listado de Productos -->
+    <fragment
+        android:id="@+id/fragmentListado"
+        android:name="com.example.tiendadefinitiva.fragments.FragmentListado"
+        android:label="Listado de Productos"
+        tools:layout="@layout/fragment_listado">
+        <action
+            android:id="@+id/action_fragmentListado_to_fragmentDetalle"
+            app:destination="@id/fragmentDetalle" /> <!-- Ir al detalle del producto -->
+        <action
+            android:id="@+id/action_fragmentListado_to_fragmentFavoritos"
+            app:destination="@id/fragmentFavoritos" /> <!-- Ir a los productos favoritos -->
+        <action
+            android:id="@+id/action_fragmentListado_to_fragmentCarrito"
+            app:destination="@id/fragmentCarrito" /> <!-- Ir al carrito de compras -->
+    </fragment>
+
+    <!-- Fragmento de Detalle del Producto -->
+    <fragment
+        android:id="@+id/fragmentDetalle"
+        android:name="com.example.tiendadefinitiva.fragments.FragmentDetalle"
+        android:label="Detalle del Producto"
+        tools:layout="@layout/fragment_detalle">
+        <action
+            android:id="@+id/action_fragmentDetalle_to_fragmentListado"
+            app:destination="@id/fragmentListado" /> <!-- Volver al listado de productos -->
+    </fragment>
+
+    <!-- Fragmento de Favoritos -->
+    <fragment
+        android:id="@+id/fragmentFavoritos"
+        android:name="com.example.tiendadefinitiva.fragments.FragmentFavoritos"
+        android:label="Favoritos"
+        tools:layout="@layout/fragment_favoritos">
+        <action
+            android:id="@+id/action_fragmentFavoritos_to_fragmentListado"
+            app:destination="@id/fragmentListado" /> <!-- Volver al listado de productos -->
+    </fragment>
+
+    <!-- Fragmento de Carrito -->
+    <fragment
+        android:id="@+id/fragmentCarrito"
+        android:name="com.example.tiendadefinitiva.fragments.FragmentCarrito"
+        android:label="Carrito"
+        tools:layout="@layout/fragment_carrito">
+        <action
+            android:id="@+id/action_fragmentCarrito_to_fragmentListado"
+            app:destination="@id/fragmentListado" /> <!-- Volver al listado de productos -->
+    </fragment>
+
+</navigation>
