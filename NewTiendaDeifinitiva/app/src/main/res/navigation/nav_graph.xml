@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/fragmentLogin">
+
+    <fragment
+        android:id="@+id/fragmentLogin"
+        android:name="com.example.newtiendadeifinitiva.fragments.FragmentLogin"
+        android:label="Login">
+        <action
+            android:id="@+id/action_fragmentLogin_to_fragmentRegistro"
+            app:destination="@id/fragmentRegistro" />
+        <action
+            android:id="@+id/action_fragmentLogin_to_fragmentListado"
+            app:destination="@id/fragmentListado" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentRegistro"
+        android:name="com.example.newtiendadeifinitiva.fragments.FragmentRegistro"
+        android:label="Registro">
+        <action
+            android:id="@+id/action_fragmentRegistro_to_fragmentListado"
+            app:destination="@id/fragmentListado" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentListado"
+        android:name="com.example.newtiendadeifinitiva.fragments.FragmentListado"
+        android:label="Listado de Productos">
+        <action
+            android:id="@+id/action_fragmentListado_to_fragmentDetalle"
+            app:destination="@id/fragmentDetalle" />
+        <action
+            android:id="@+id/action_fragmentListado_to_fragmentFavoritos"
+            app:destination="@id/fragmentFavoritos" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentDetalle"
+        android:name="com.example.newtiendadeifinitiva.fragments.FragmentDetalle"
+        android:label="Detalle del Producto">
+        <!-- Ejemplo de acción adicional (puedes agregar más según la lógica) -->
+        <action
+            android:id="@+id/action_fragmentDetalle_to_fragmentCarrito"
+            app:destination="@id/fragmentCarrito" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentFavoritos"
+        android:name="com.example.newtiendadeifinitiva.fragments.FragmentFavoritos"
+        android:label="Favoritos">
+        <action
+            android:id="@+id/action_fragmentFavoritos_to_fragmentDetalle"
+            app:destination="@id/fragmentDetalle" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentCarrito"
+        android:name="com.example.newtiendadeifinitiva.fragments.FragmentCarrito"
+        android:label="Carrito de Compras" />
+</navigation>

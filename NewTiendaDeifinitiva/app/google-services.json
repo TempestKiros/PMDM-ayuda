@@ -1,0 +1,106 @@
+{
+  "project_info": {
+    "project_number": "38897296235",
+    "firebase_url": "https://comprasret-3d7dd-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "comprasret-3d7dd",
+    "storage_bucket": "comprasret-3d7dd.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:38897296235:android:6180c92237c535821a622e",
+        "android_client_info": {
+          "package_name": "com.example.cuentas"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA8VL0lGASelaMInsVKoMW1aDUL3FsoOBE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:38897296235:android:d37f74da8c53e0701a622e",
+        "android_client_info": {
+          "package_name": "com.example.mytienda"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA8VL0lGASelaMInsVKoMW1aDUL3FsoOBE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:38897296235:android:2edb5da5ce7bf68a1a622e",
+        "android_client_info": {
+          "package_name": "com.example.navegacionfrancobc"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA8VL0lGASelaMInsVKoMW1aDUL3FsoOBE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:38897296235:android:a6e09bb6c992cf601a622e",
+        "android_client_info": {
+          "package_name": "com.example.newtiendadefinitiva"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA8VL0lGASelaMInsVKoMW1aDUL3FsoOBE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:38897296235:android:c14f6ba9df67f8391a622e",
+        "android_client_info": {
+          "package_name": "com.example.tiendadefinitiva"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA8VL0lGASelaMInsVKoMW1aDUL3FsoOBE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
